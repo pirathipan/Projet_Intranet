@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+<nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      {% if is_granted("ROLE_USER") or is_granted("ROLE_ADMIN") or is_granted("ROLE_SUPER_ADMIN") %}
+      <div>
+        <a href="/logout">Déconnexion</a>
+      </div>
+      {% else %}
+      <div>
+        <a href="login">Connexion</a>
+      </div>
+      <div>
+        <a href="register">register</a>
+      </div>
+    {% endif %}
+    </div>
+
+  </div>
+</nav>

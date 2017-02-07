@@ -1,0 +1,4 @@
+Intranet
+========
+
+A Symfony project 

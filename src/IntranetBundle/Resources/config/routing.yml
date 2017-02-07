@@ -1,0 +1,3 @@
+home:
+  path : /matiere
+  default: {__controller: IntranetBundle:matiere.index}
